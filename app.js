@@ -1,4 +1,3 @@
-//ID приложения	8110701 8110864
 // хелперы для handlebars, "процедуры", используемые в html
 // Handlebars.registerHelper('formatTime', (time) => {});
 
