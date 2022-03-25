@@ -1,0 +1,40 @@
+body {
+  font-size: 20px;
+  background-color: rgb(240, 240, 240);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+table {
+  text-align: center;
+  background-color: rgb(173, 15, 152);
+  border-collapse: separate;
+  color: aliceblue;
+  border: 15px solid rgb(173, 15, 152);
+}
+th {
+  background-color: rgb(22, 114, 114);
+  width: 200px;
+  height: 40px;
+}
+th:hover {
+  background-color: rgb(32, 160, 160);
+}
+td {
+  background-color: rgb(65, 129, 129);
+  width: 200px;
+  height: 40px;
+}
+
+.active {
+  color: rgb(248, 108, 108);
+}
+a {
+  color: inherit;
+}
+.pointer {
+  cursor: pointer;
+}
