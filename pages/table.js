@@ -1,7 +1,10 @@
 import View from '../pages/view.js';
+import filterColumn from './utils.js';
 
 //переменная для хранения данных для страницы
 var dataPageTable = [];
+//перваночальная установка направления фильтрации в таблице
+localStorage.setItem('direction', 'up');
 
 export default {
   //загрузка данных для страницы
@@ -10,7 +13,8 @@ export default {
   },
   render(column) {
     const newElement = document.querySelector('.content');
-    dataPageTable = dataPageTable.sort((a, b) => a[column] - b[column]);
+    dataPageTable = filterColumn(dataPageTable, column);
+
     newElement.innerHTML = View.getTemplateElement('cities', {
       list: dataPageTable,
     });
